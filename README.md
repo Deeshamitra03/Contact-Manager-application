@@ -53,6 +53,8 @@ CREATE TABLE contacts (
     tags VARCHAR(255)
 );
 
+```
+
 ## API Endpoints
 
 Method,Endpoint,Description
