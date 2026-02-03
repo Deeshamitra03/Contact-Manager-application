@@ -55,12 +55,24 @@ CREATE TABLE contacts (
 
 ```
 
-## API Endpoints
+## 📡 API Endpoints
 
-Method,Endpoint,Description
-POST,/auth/register,Register a new user
-POST,/auth/login,Login existing user
-GET,/dashboard/contacts,Fetch all contacts (Sorted by Fav > A-Z)
-POST,/dashboard/contacts,"Add a new contact (Requires Name, Phone, Email)"
-PUT,/dashboard/contacts/favorite/:id,"Toggle ""Favorite"" status"
-DELETE,/dashboard/contacts/:id,Delete a contact
+| Method | Endpoint | Description |
+| :--- | :--- | :--- |
+| **POST** | `/auth/register` | Register a new user |
+| **POST** | `/auth/login` | Login an existing user and get a token |
+| **GET** | `/dashboard/contacts` | Get all contacts (Sorted: Favorites first, then A-Z) |
+| **POST** | `/dashboard/contacts` | Add a new contact (Body: name, phone, email, notes, tags) |
+| **PUT** | `/dashboard/contacts/favorite/:id` | Toggle "Favorite" status (★) |
+| **DELETE** | `/dashboard/contacts/:id` | Delete a specific contact |
+
+## 📸 Screenshots
+
+### Login Page
+![Login Page](./assets/login-page.png)
+
+### Registration Page
+![Dashboard](./assets/resgister-page.png)
+
+### Dashboard
+![Dashboard](./assets/dashboard.png)
