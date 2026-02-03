@@ -72,7 +72,7 @@ CREATE TABLE contacts (
 ![Login Page](login-page.png)
 
 ### Registration Page
-![Dashboard](resgister-page.png)
+![Dashboard](register-page.png)
 
 ### Dashboard
 ![Dashboard](dashboard.png)
