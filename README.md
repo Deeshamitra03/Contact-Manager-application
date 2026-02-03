@@ -69,10 +69,10 @@ CREATE TABLE contacts (
 ## 📸 Screenshots
 
 ### Login Page
-![Login Page](./assets/login-page.png)
+![Login Page](login-page.png)
 
 ### Registration Page
-![Dashboard](./assets/resgister-page.png)
+![Dashboard](resgister-page.png)
 
 ### Dashboard
-![Dashboard](./assets/dashboard.png)
+![Dashboard](dashboard.png)
