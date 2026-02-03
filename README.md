@@ -52,3 +52,13 @@ CREATE TABLE contacts (
     notes TEXT,
     tags VARCHAR(255)
 );
+
+## API Endpoints
+
+Method,Endpoint,Description
+POST,/auth/register,Register a new user
+POST,/auth/login,Login existing user
+GET,/dashboard/contacts,Fetch all contacts (Sorted by Fav > A-Z)
+POST,/dashboard/contacts,"Add a new contact (Requires Name, Phone, Email)"
+PUT,/dashboard/contacts/favorite/:id,"Toggle ""Favorite"" status"
+DELETE,/dashboard/contacts/:id,Delete a contact
