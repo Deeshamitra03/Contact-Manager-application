@@ -27,9 +27,6 @@ const corsOptions = {
 // Apply the CORS settings
 app.use(cors(corsOptions));
 
-// Handle the "Preflight" (OPTIONS) check explicitly
-app.options('*', cors(corsOptions)); 
-
 // =================================================================
 
 app.use(express.json()); // allows us to access req.body
