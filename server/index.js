@@ -9,11 +9,16 @@ app.use(express.json());
 
 // ROUTES
 app.use("/auth", require("./routes/jwtAuth"));
+app.use("/dashboard", require("./routes/dashboard"));
+
+// Basic Check Route
 app.get("/", (req, res) => {
     res.send("Server is running correctly!");
 });
-app.use("/dashboard", require("./routes/dashboard"));
 
-app.listen(5000, () => {
-    console.log("Server has started on port 5000");
+
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+    console.log(`Server has started on port ${PORT}`);
 });
