@@ -4,7 +4,11 @@ const cors = require("cors");
 const pool = require("./db");
 
 // Middleware
-app.use(cors());
+app.use(cors({
+    origin: ["https://contact-manager-application-e79cmh1ri-deesha-mitras-projects.vercel.app", "http://localhost:3000"],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
+}));
 app.use(express.json());
 
 // ROUTES
