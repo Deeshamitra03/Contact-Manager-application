@@ -18,7 +18,7 @@ const Login = ({ setAuth }) => {
     try {
       const body = { email, password };
       const response = await fetch(
-        "http://localhost:5000/auth/login",
+        "https://contact-manager-application-qcvk.onrender.com/auth/login",
         {
           method: "POST",
           headers: {

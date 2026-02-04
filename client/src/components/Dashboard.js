@@ -16,7 +16,7 @@ const Dashboard = ({ setAuth }) => {
   // Get all contacts
   async function getContacts() {
     try {
-      const response = await fetch("http://localhost:5000/dashboard/contacts", {
+      const response = await fetch("https://contact-manager-application-qcvk.onrender.com/dashboard/contacts", {
         method: "GET",
         headers: { token: localStorage.getItem("token") }
       });
@@ -44,7 +44,7 @@ const Dashboard = ({ setAuth }) => {
         tags: inputs.contactTags
       };
 
-      const response = await fetch("http://localhost:5000/dashboard/contacts", {
+      const response = await fetch("https://contact-manager-application-qcvk.onrender.com/dashboard/contacts", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -70,7 +70,7 @@ const Dashboard = ({ setAuth }) => {
 
   async function toggleFavorite(id) {
     try {
-      await fetch(`http://localhost:5000/dashboard/contacts/favorite/${id}`, {
+      await fetch(`https://contact-manager-application-qcvk.onrender.com/dashboard/contacts/favorite/${id}`, {
         method: "PUT",
         headers: { token: localStorage.getItem("token") }
       });
@@ -82,7 +82,7 @@ const Dashboard = ({ setAuth }) => {
 
   async function deleteContact(id) {
     try {
-      await fetch(`http://localhost:5000/dashboard/contacts/${id}`, {
+      await fetch(`https://contact-manager-application-qcvk.onrender.com/dashboard/contacts/${id}`, {
         method: "DELETE",
         headers: { token: localStorage.getItem("token") }
       });
